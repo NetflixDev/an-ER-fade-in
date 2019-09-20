@@ -7,13 +7,16 @@ var Creative = function() {
   this.play = function() {
     console.log('Creative.play()');
     var delay = 0;
-    TweenLite.fromTo(View.endFrame, 1.5, { alpha: 0 }, { alpha: 1, delay: delay });
+    TweenLite.fromTo(View.endFrame, Creative.fadeDuration, { alpha: 0 }, { alpha: 1, delay: delay });
 
     TweenLite.delayedCall(delay, function() {
       View.endFrame.netflixLogo.play();
     });
   };
 };
+
+// how long fade-in takes (in seconds)
+Creative.fadeDuration = 1.5;
 
 // how long zoom animates for (in seconds)
 Creative.zoomDuration = 1.7;
