@@ -1,11 +1,11 @@
-// how long fade-in takes (in seconds)
-var FADE_DURATION = 1.5;
-
 // how long zoom animates for (in seconds)
 var ZOOM_DURATION = 1.7;
 
 // how much to scale the keyart intro frame
 var ZOOM_AMOUNT = 5;
+
+// how long fade-in takes (in seconds)
+var FADE_DURATION = 1.5;
 
 var Creative = function() {
   this.init = function() {
